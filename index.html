@@ -1,6 +1,8 @@
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latihan</title>
     <link rel="stylesheet" href="assets/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,20 +11,22 @@
 
 <body>
     <header>
-        <div class="jumbotron">
-            <h1>Bandung </h1>
-            <p>Kota metropolitan di provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.</p>
-        </div>
-        <nav class="nav li">
-            <ul>
-                <li><a href="#sejarah">Sejarah</a></li>
-                <li><a href="#geografis">Geografis</a></li>
-                <li><a href="#wisata">Wisata</a></li>
-                <li><a href="#tentang">Tentang Kami</a></li>
+        <a href="#" class="logo">Testpen Coding</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#sejarah" onclick="toggleMenu();">Sejarah</a></li>
+                <li><a href="#geografis" onclick="toggleMenu();">Geografis</a></li>
+                <li><a href="#wisata" onclick="toggleMenu();">Wisata</a></li>
+                <li><a href="#tentang" onclick="toggleMenu();">Tentang Kami</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="banner" id="home">
+        
+        </section>
+
         <div id="content">
             <article id="sejarah" class="card">
                 <h2>Sejarah</h2>
@@ -123,23 +127,26 @@
                 </div>
             </div>
         </section>
-       <section class="boxTentang">
-        <aside>
-            <article class="card-photo">
-                <div class="card-img w50">
+
+        <section  class="boxTentang">
+            <aside>
+                <article class="card-photo">
+                    <div class="card-img w50">
                         <img src="assets/image/bandung.png" class="img" />
-                    <div class="textKota">
-                        Kota Bandung <br>
-                        Negara : Indonesia <br>
-                        Hari Jadi : 25 September 1810 <br>
-                        Luas Total : 167.67km <br>
-                        Bahasa Daerah : Sunda <br>
-                        Kode Telepon : +62 62
+                        <div onclick="moreaboutme()" title="Klik Untuk Buka" class="btn">Detail More</div>
+                        <div id="penulis">
+                            Kota Bandung <br>
+                            Negara : Indonesia <br>
+                            Hari Jadi : 25 September 1810 <br>
+                            Luas Total : 167.67km <br>
+                            Bahasa Daerah : Sunda <br>
+                            Kode Telepon : +62 62
+                        </div>
                     </div>
-                </div>
-            </article>
-        </aside>
-       </section>
+                </article>
+            </aside>
+        </section>
+        <script src="assets/index.js"></script>
     </main>
     <footer>
         <div class="container">
